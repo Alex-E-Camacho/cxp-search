@@ -2,7 +2,6 @@ const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 
-
 const app = express();
 
 app.use(logger('dev'));
@@ -17,4 +16,3 @@ app.get('*', (req,res) => res.status(200).send({
 
 
 module.exports = app;
-
