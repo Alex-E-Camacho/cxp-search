@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "postgres",
-    "password": null,
+    "password": "azuresearch18",
     "database": "azurecxpsearch",
     "host": "127.0.0.1",
     "port": 5432,
