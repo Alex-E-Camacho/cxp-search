@@ -1,10 +1,14 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var search = sequelize.define('search', {
-    text: DataTypes.STRING
-  }, {});
-  search.associate = function(models) {
+  const Search = sequelize.define('Search', {
+    text: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
+  });
+
+  Search.associate = function(models) {
     // associations can be defined here
   };
-  return search;
+  return Search;
 };
