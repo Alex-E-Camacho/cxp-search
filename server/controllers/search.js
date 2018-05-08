@@ -2,6 +2,7 @@ const Search = require('../models').Search;
 
 module.exports = {
     create(req, res) {
+        console.log(req.body);
         return Search
         .create({
           text: req.body.search_text  

@@ -16,5 +16,7 @@ module.exports = (app) => {
       .catch((error) => {
         console.log(error);
       }) 
-    )
+    );
+
+    app.post('/search', searchController.create);
   };
